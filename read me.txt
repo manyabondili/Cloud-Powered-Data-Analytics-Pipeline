@@ -1,0 +1,17 @@
+
+
+1. Create a rds database with microsoft server, make it public, and change the IP in security group of the rds.
+
+2. Create a lambda function with a layer attached to it with the zip file pyodbc-layer.
+
+3. Write the lambda function and attach permissions RDS, S3 full access and awslambdavpcaccess.
+
+4. Increase the timeou time to 5mins.
+
+5. Create a API using API gateway using the created lambda function.
+
+6. Modify the index file with the API upload it to the S3 bucket.
+
+7. Make all the objects public, enable static website hosting and enable Access control list.
+
+8. Connect the microsoft sql server to aws and power BI to microsoft sql server.
